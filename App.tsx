@@ -30,7 +30,7 @@ type SectionProps = PropsWithChildren<{
 }>;
 
 function Section({children, title}: SectionProps): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = useColorScheme() === 'light';
   return (
     <View style={styles.sectionContainer}>
       <Text
@@ -56,7 +56,7 @@ function Section({children, title}: SectionProps): JSX.Element {
 }
 
 function App(): JSX.Element {
-  const isDarkMode = useColorScheme() === 'dark';
+  const isDarkMode = useColorScheme() === 'light';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
@@ -86,10 +86,10 @@ function App(): JSX.Element {
             21/474373/SV/18906
           </Section>
           <Section title="Kelas">
-            Aaaaaa
+            A
           </Section>
           <Section title="About Me">
-            Read the docs to discover what to do 
+          Mahasiswa semester 5 Sistem Informasi Geografis yang antusias dengan dedikasi dalam mengintegrasikan teknologi geospasial untuk solusi inovatif. Memiliki ketertarikan dalam bidang pemetaan dan GIS Programming. Mampu melakukan analisis dan pengolahan data spasial, pemrograman GIS, serta mengoperasikan alat survei baik survei terestris maupun survei aerial.
           </Section>
           <LearnMoreLinks />
         </View>
