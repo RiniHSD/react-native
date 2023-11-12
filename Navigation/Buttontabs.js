@@ -5,6 +5,7 @@ import {Text, View, Image, StyleSheet, ScrollView} from 'react-native';
 import Fontawesome5 from 'react-native-vector-icons/FontAwesome5';
 import Portofolio from '../App';
 import {WebView} from 'react-native-webview';
+import Getjsonfile from '../Getjsonfile';
 
 const Tab = createBottomTabNavigator();
 
@@ -50,6 +51,15 @@ function ProfileScreen() {
     );
 }
 
+function MahasiswaScreen() {
+    return (
+        <View>
+            <Getjsonfile/>
+        </View>
+    );
+}
+
+
 function MyTabs() {
   return (
     <NavigationContainer>
@@ -72,6 +82,13 @@ function MyTabs() {
         tabBarLabel: 'Profile',
         tabBarIcon: ({ color, size }) => (
               <Fontawesome5 name="user-circle" color={color} size={size}/>
+        ),
+        }}
+    />
+      <Tab.Screen name="Mahasiswa" component={MahasiswaScreen} options={{
+        tabBarLabel: 'Mahasiswa',
+        tabBarIcon: ({ color, size }) => (
+              <Fontawesome5 name="users" color={color} size={size}/>
         ),
         }}
     />
