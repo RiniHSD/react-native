@@ -8,7 +8,7 @@ const Callapi = () => {
     "https://script.google.com/macros/s/AKfycbxVBTjmaciI0FWYgwcsmsXn8XY00X2YaaujU2n6w8Or8UIByIBNvUT7NvoFWfp4JyWhSg/exec";
   const [isLoading, setLoading] = useState(true);
   const [dataUser, setDataUser] = useState({});
-  const [refresh, setRefresh] = useState(false);
+  const [refresh, setRefresh] = useState(true);
 
   useEffect(() => {
     fetch(jsonUrl)

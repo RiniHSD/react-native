@@ -1,0 +1,31 @@
+{
+  "mahasiswa": [
+    {
+      "id": 1,
+      "nama": "Rini Husadiyah",
+      "nim": "21/474373/SV/18906",
+      "kelas": "A",
+      "icon": "cat",
+      "color": "#363062",
+      "jeniskelamin": "Perempuan"
+    },
+    {
+      "nama": "Rini Husadiyah",
+      "nim": "21/474373/SV/18906",
+      "kelas": "A",
+      "icon": "paw",
+      "color": "#00FF00",
+      "jeniskelamin": "Perempuan",
+      "id": 2
+    },
+    {
+      "nama": "Rini Husadiyah",
+      "nim": "21/474373/SV/18906",
+      "kelas": "A",
+      "icon": "paw",
+      "color": "#fc8403",
+      "jeniskelamin": "Perempuan",
+      "id": 3
+    }
+  ]
+}
